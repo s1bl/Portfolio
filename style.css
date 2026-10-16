@@ -196,3 +196,25 @@ p{line-height:1.72}
 .stage-tags span{padding:6px 11px;border:1px solid #cfe3d5;border-radius:999px;background:#fff;color:#366653;font-size:.76rem;font-weight:600}
 .stage-contact-button{flex:none;white-space:nowrap}
 @media(max-width:750px){.stage-banner{flex-direction:column;align-items:flex-start;padding:27px 24px;gap:22px}.stage-banner-section{padding:0 0 30px}}
+
+
+/* Recherche de stage — carte éditoriale structurée */
+.stage-banner-section{padding:28px 0 66px;scroll-margin-top:95px}
+.stage-panel{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(260px,.8fr);overflow:hidden;border-radius:27px;background:#153a3a;color:#f4fbf5;box-shadow:0 24px 56px rgba(16,42,45,.15)}
+.stage-panel-main{position:relative;padding:46px clamp(28px,5vw,66px) 47px;isolation:isolate}
+.stage-panel-main:after{content:"";position:absolute;z-index:-1;width:350px;height:350px;border:1px solid rgba(191,230,205,.10);border-radius:50%;right:-150px;bottom:-245px;box-shadow:0 0 0 55px rgba(191,230,205,.035),0 0 0 110px rgba(191,230,205,.025)}
+.stage-kicker{display:flex;align-items:center;gap:10px;margin:0 0 24px!important;color:#b5e2c6!important;font-size:.7rem;font-weight:800;letter-spacing:.14em;line-height:1.3!important}
+.stage-status-dot{display:inline-block;width:8px;height:8px;flex:none;border-radius:50%;background:#8ee5aa;box-shadow:0 0 0 5px rgba(142,229,170,.12)}
+.stage-panel h2{max-width:600px;margin:0 0 19px;color:#fff;font-size:clamp(2rem,3.4vw,3.15rem);font-weight:750;line-height:1.12;letter-spacing:-.05em}
+.stage-panel h2 em{font-style:normal;color:#a9dfb9}
+.stage-panel .stage-description{max-width:59ch;margin:0;color:#d5e6df;font-size:.96rem;line-height:1.8}
+.stage-cta{display:inline-flex;align-items:center;gap:22px;margin-top:27px;padding:12px 19px;border-radius:999px;background:#d9f0e1;color:#143733;font-size:.88rem;font-weight:750;text-decoration:none;transition:transform .2s,background .2s}
+.stage-cta:hover{background:#fff;transform:translateY(-2px)}
+.stage-panel-details{display:flex;flex-direction:column;justify-content:center;gap:0;padding:29px 31px;background:#eaf3ec;color:#183e39}
+.stage-detail{display:flex;align-items:center;gap:16px;padding:23px 0}
+.stage-detail+.stage-detail{border-top:1px solid #cbded2}
+.stage-detail-icon{display:grid;place-items:center;flex:none;width:45px;height:45px;border:1px solid #c9dfd1;border-radius:13px;background:#fff;color:#285e50;font-size:1.3rem}
+.stage-detail-label{display:block;margin-bottom:5px;color:#5e7c6e;font-size:.64rem;font-weight:800;letter-spacing:.13em}
+.stage-detail strong{display:block;color:#173d37;font-size:.97rem;line-height:1.45}
+@media(max-width:800px){.stage-panel{grid-template-columns:1fr}.stage-panel-main{padding:35px 30px}.stage-panel-details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;padding:18px 26px}.stage-detail{align-items:flex-start;gap:10px;padding:12px 0}.stage-detail+.stage-detail{border-top:0}.stage-detail-icon{width:36px;height:36px;font-size:1rem}.stage-detail strong{font-size:.82rem}}
+@media(max-width:570px){.stage-panel-main{padding:32px 25px}.stage-panel h2{font-size:2rem}.stage-panel-details{grid-template-columns:1fr;gap:0;padding:14px 25px}.stage-detail{align-items:center;padding:14px 0}.stage-detail+.stage-detail{border-top:1px solid #cbded2}.stage-detail strong{font-size:.9rem}.stage-banner-section{padding-bottom:40px}}
