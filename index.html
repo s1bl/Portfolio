@@ -29,7 +29,10 @@
         <p class="stage-kicker"><span class="stage-status-dot" aria-hidden="true"></span> DISPONIBLE POUR UN STAGE EN 2027</p>
         <h2 id="stage-title">À la recherche de ma prochaine <em>expérience.</em></h2>
         <p class="stage-description">Je recherche un stage de 4 à 5 semaines entre mai et août 2027, dans le domaine des systèmes, réseaux ou de la cybersécurité, afin de mettre en pratique mes connaissances et découvrir le monde professionnel.</p>
-        <a class="stage-cta" href="#contact">Me contacter <span aria-hidden="true">↗</span></a>
+        <div class="stage-actions">
+          <a class="stage-cta" href="#contact">Me contacter <span aria-hidden="true">↗</span></a>
+          <a class="stage-cta stage-cta-outline" href="CVOnline.pdf" download="CV_Samy_B.pdf" type="application/pdf" aria-label="Télécharger mon CV au format PDF">Télécharger mon CV <svg class="cv-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 16v4h16v-4"/></svg></a>
+        </div>
       </div>
       <div class="stage-panel-details" aria-label="Informations sur le stage">
         <div class="stage-detail"><span class="stage-detail-icon" aria-hidden="true">◷</span><div><span class="stage-detail-label">DURÉE</span><strong>4 à 5 semaines</strong></div></div>
@@ -166,9 +169,77 @@
 </div>
 </div></section>
 
-<section class="contact-section" id="contact"><div class="container contact-layout"><div class="contact-intro reveal"><p class="eyebrow">06 • Contact</p><h2>Un projet, une question ?</h2><p>Je suis ouvert aux échanges autour des systèmes, des réseaux et de la cybersécurité. Retrouvez-moi sur LinkedIn pour prendre contact.</p></div>
-<div class="contact-card reveal"><div class="contact-card-icon" aria-hidden="true">in</div><p class="eyebrow">Restons en contact</p><h3>Échangeons sur LinkedIn.</h3><p>Parlons de votre projet ou de nos expériences dans l’informatique.</p><a class="button button-primary" href="https://www.linkedin.com/in/s1mb/" target="_blank" rel="noopener noreferrer">Voir mon profil <span aria-hidden="true">↗</span></a></div>
-</div></section>
+<section class="contact-section" id="contact" aria-labelledby="contact-title">
+  <div class="container contact-layout">
+    <div class="contact-intro reveal">
+      <p class="eyebrow">06 • Contact</p>
+      <h2 id="contact-title">Parlons de votre <span>projet.</span></h2>
+      <p>Une question, une proposition de stage ou simplement envie d’échanger sur l’informatique ? Je serai ravi de vous lire.</p>
+
+      <div class="contact-direct">
+        <span class="contact-mini-label">MON ADRESSE PROFESSIONNELLE</span>
+        <a class="contact-email-link" href="mailto:samyb.pros@outlook.fr">samyb.pros@outlook.fr <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="contact-social">
+        <div class="contact-social-icon" aria-hidden="true">in</div>
+        <div class="contact-social-text">
+          <strong>Retrouvez-moi sur LinkedIn</strong>
+          <span>Mon parcours et mon réseau professionnel</span>
+        </div>
+        <a class="contact-social-link" href="https://www.linkedin.com/in/s1mb/" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir mon profil LinkedIn dans un nouvel onglet">↗</a>
+      </div>
+
+      <div class="cv-contact-card">
+        <span class="cv-file-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M13 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10zM13 3v7h7M8 15h8M8 18h6"/></svg></span>
+        <div class="cv-file-copy">
+          <strong>Mon CV</strong>
+          <span>Parcours et compétences · PDF</span>
+        </div>
+        <a class="cv-file-download" href="CVOnline.pdf" download="CV_Samy_B.pdf" type="application/pdf" aria-label="Télécharger mon CV au format PDF"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 16v4h16v-4"/></svg></a>
+      </div>
+    </div>
+
+    <div class="contact-card contact-message-card reveal">
+      <div class="contact-form-heading">
+        <div>
+          <p class="contact-form-kicker">PRENDRE CONTACT</p>
+          <h3>Envoyez-moi un message.</h3>
+          <p>Quelques mots suffisent pour commencer.</p>
+        </div>
+        <span class="contact-form-symbol" aria-hidden="true">✉</span>
+      </div>
+
+      <form id="contactForm" class="contact-form-fields">
+        <div class="contact-field-row">
+          <div class="contact-field">
+            <label for="contactName">Votre nom</label>
+            <input id="contactName" name="name" type="text" autocomplete="name" placeholder="Votre nom" maxlength="100" required>
+          </div>
+          <div class="contact-field">
+            <label for="contactEmail">Votre e-mail</label>
+            <input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="nom@exemple.fr" maxlength="150" required>
+          </div>
+        </div>
+        <div class="contact-field">
+          <label for="contactSubject">Sujet</label>
+          <select id="contactSubject" name="subject" required>
+            <option value="Proposition de stage">Proposition de stage</option>
+            <option value="Question sur mon portfolio">Question sur mon portfolio</option>
+            <option value="Échange professionnel">Échange professionnel</option>
+            <option value="Autre demande">Autre demande</option>
+          </select>
+        </div>
+        <div class="contact-field">
+          <label for="contactMessage">Votre message</label>
+          <textarea id="contactMessage" name="message" rows="5" maxlength="2500" placeholder="Bonjour Samy, je vous contacte au sujet de..." required></textarea>
+        </div>
+        <button class="contact-submit" type="submit">Préparer mon message <span aria-hidden="true">↗</span></button>
+        <p class="contact-form-note">Le bouton ouvre votre messagerie avec le message prérempli. Vous pourrez le relire avant de l’envoyer.</p>
+      </form>
+    </div>
+  </div>
+</section>
 </main>
 <footer class="footer container"><span>© <span id="year"></span> Samy B.</span><a href="#accueil">Retour en haut ↑</a></footer>
 <script src="script.js"></script></body></html>

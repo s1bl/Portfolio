@@ -101,3 +101,21 @@ document.querySelectorAll('.skill-group').forEach((card) => {
     card.style.setProperty('--my', `${y}%`);
   });
 });
+
+
+// Contact sur GitHub Pages : compose un e-mail sans serveur ni service tiers.
+const contactForm = document.getElementById('contactForm');
+contactForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (!contactForm.reportValidity()) return;
+  const data = new FormData(contactForm);
+  const name = String(data.get('name') || '').trim();
+  const email = String(data.get('email') || '').trim();
+  const subject = String(data.get('subject') || 'Contact depuis le portfolio');
+  const message = String(data.get('message') || '').trim();
+  if (!name || !email || !message) return;
+  const body = `Bonjour Samy,\n\n${message}\n\n—\nDe : ${name}\nAdresse e-mail : ${email}\n(Message préparé depuis votre portfolio)`;
+  const destination = 'samyb.pros@outlook.fr';
+  const url = `mailto:${destination}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = url;
+});
