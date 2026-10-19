@@ -227,7 +227,9 @@ p{line-height:1.72}
 .contact-intro h2{max-width:580px;margin:0 0 22px;color:#fff;font-size:clamp(2.55rem,4.6vw,4.65rem);line-height:1.075;letter-spacing:-.065em}
 .contact-intro h2 span{color:#a9dfb9}
 .contact-intro>p:not(.eyebrow){max-width:43ch;color:#c2d4ce;font-size:.98rem;line-height:1.85}
-.contact-direct{display:flex;flex-direction:column;gap:9px;margin-top:43px;padding-bottom:30px;border-bottom:1px solid rgba(224,242,233,.15)}
+.contact-location{display:inline-flex;align-items:center;gap:9px;width:fit-content;margin-top:25px;padding:10px 13px;border:1px solid rgba(196,230,210,.18);border-radius:12px;background:rgba(203,232,216,.06);color:#d9e9df;font-size:.86rem;font-weight:600}
+.contact-location svg{width:17px;height:17px;fill:none;stroke:#a9dfb9;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.contact-direct{display:flex;flex-direction:column;gap:9px;margin-top:27px;padding-bottom:30px;border-bottom:1px solid rgba(224,242,233,.15)}
 .contact-mini-label{color:#9ec0b3;font-size:.69rem;font-weight:750;letter-spacing:.14em}
 .contact-email-link{display:inline-flex;align-items:center;gap:13px;align-self:flex-start;color:#f5fbf7;font-size:clamp(1rem,2vw,1.27rem);font-weight:650;letter-spacing:-.035em;overflow-wrap:anywhere;transition:color .2s}
 .contact-email-link:hover{color:#a9dfb9}
